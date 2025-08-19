@@ -34,8 +34,8 @@ const BodyTypeResults = () => {
   const getBodyTypeColor = (type: string) => {
     const colors = {
       Mesomorph: "bg-accent text-accent-foreground",
-      Ectomorph: "bg-primary text-primary-foreground", 
-      Endomorph: "bg-secondary text-secondary-foreground"
+      Ectomorph: "bg-secondary text-secondary-foreground", 
+      Endomorph: "bg-primary text-primary-foreground"
     };
     return colors[type as keyof typeof colors];
   };
