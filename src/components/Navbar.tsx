@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Dumbbell, Menu, X } from "lucide-react";
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,6 +29,7 @@ const Navbar = () => {
           <a href="#results" className="text-foreground hover:text-primary transition-colors">
             Results
           </a>
+          <ThemeToggle />
           <Button variant="hero" className="bg-gradient-primary hover:shadow-glow transition-all duration-300">
             Get Started
           </Button>
